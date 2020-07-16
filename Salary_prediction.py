@@ -1,6 +1,6 @@
 ### Loading and cleaning Data
 import pandas as pd
-DataFrame = pd.read_csv('C:/Users/Parth/PycharmProjects/LinearRegression/venv/Salary_dataset.csv')
+DataFrame = pd.read_csv('.../LinearRegression/venv/Salary_dataset.csv')
 X = DataFrame.iloc[:, :-1].values
 y = DataFrame.iloc[:, 1].values
 
