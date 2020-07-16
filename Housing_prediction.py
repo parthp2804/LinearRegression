@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-House = pd.read_csv('C:/Users/Parth/PycharmProjects/LinearRegression/venv/Housing.csv')
+House = pd.read_csv('.../LinearRegression/venv/Housing.csv')
 
 
 # visualizing the distribution of housing prices
