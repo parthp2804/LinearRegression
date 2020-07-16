@@ -2,18 +2,19 @@ from sklearn.datasets.samples_generator import make_regression
 import numpy as np
 X,y = make_regression(n_samples=200, n_features=1, n_informative=1, noise=6, bias=30, random_state=200)
 m=200
-
+#hypothesis
 def h(X,w):
 	return (w[1]*np.array(X[:,0])+w[0])
-
+#cost function
 def cost(w,X,y):
 	return (.5/m) * np.sum(np.square(h(X,w) - np.array(y)))
-
+#derivatives
 def grad(w,X,y):
 	g = [0]*2
 	g[0] = (1/m)*np.sum(h(X,w) - np.array(y))
 	g[1] = (1/m)*np.sum((h(X,w) - np.array(y))* np.array(X[:,0]))
 	return g
+#gradient descent
 def descent(w_new,w_prev,lr):
 	print(w_prev)
 	print(cost(w_prev,X,y))
