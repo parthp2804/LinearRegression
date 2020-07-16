@@ -4,8 +4,8 @@ from sklearn.metrics  import r2_score
 from sklearn.linear_model import LinearRegression
 import os
 
-train = pd.read_csv('C:/Users/Parth/PycharmProjects/LinearRegression/venv/traincsv.csv')
-test = pd.read_csv('C:/Users/Parth/PycharmProjects/LinearRegression/venv/testcsv.csv')
+train = pd.read_csv('.../LinearRegression/venv/traincsv.csv')
+test = pd.read_csv('.../LinearRegression/venv/testcsv.csv')
 train = train.dropna()
 x_train = train['x']
 y_train = train['y']
